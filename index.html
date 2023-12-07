@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Example</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body >
+    <img src="Sources/1.png" alt="" id="Log_Top" />
+    <ul class="nav">
+      <li>
+        <a href="#" onclick="toggleDiv('myDiv1')">
+          <i class="fas fa-user-plus fa-3x sign-up">
+            <div class="circle"></div>
+          </i>
+          <div class="title">Sign In</div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="toggleDiv('myDiv2')">
+
+          <i class="fas fa-home fa-3x home">
+            <div class="circle"></div>
+          </i>
+          <div class="title">Home</div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="toggleDiv('myDiv7')">
+          <i class="fab fa-codepen fa-3x codepen">
+            <div class="circle"></div
+          ></i>
+          <div class="title">Codepen</div>
+        </a>
+      </li>
+
+      <div class="background"></div>
+    </ul>
+
+    <div id="myDiv1" class="Div">
+      <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1 class="Title"><b>Create Account</b></h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/login.php" class="social"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"
+                class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.linkedin.com/login" class="social"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1 class="Title"><b> Sign in</b></h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/login.php" class="social"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"
+                class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.linkedin.com/login" class="social"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" name="Remember me" id="Remember_me" />
+                </td>
+                <td>
+                  <span>Remember me</span>
+                </td>
+              </tr>
+            </table>
+
+            <a href="#" class="Green">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <!-- Left Panel -->
+            <div class="overlay-panel overlay-left">
+              <img src="Sources/1.png" alt="Logo" class="Logo" />
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signInButton">Sign In</button>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="overlay-panel overlay-right">
+              <img src="Sources/1.png" alt="Logo" class="Logo" />
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start the journey with us</p>
+              <button class="ghost" id="signUpButton">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myDiv2">
+      <div id="F1">
+        <table>
+          <tr>
+            <td id="T1">
+              <h3>Raspberries</h3>
+              <p>
+                Start date: 12/05/2023 <br />
+                Harvest date: 20/11/2023 <br />
+                Weight: 125g
+              </p>
+            </td>
+            <td>
+              <img src="Sources/Res.png" alt="Raspberries" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h1 class="Titre">Farm Location</h1>
+      <iframe
+        id="Mapp"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14914.275850267819!2d-156.5067995!3d20.8491053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7954d15bca3307bb%3A0xa55f7bcb015f1bab!2sMaui%20Tropical%20Plantation!5e0!3m2!1sen!2stn!4v1701380082967!5m2!1sen!2stn"
+        width="430"
+        height="250"
+        style="
+          border: 2px solid #2f7b1f;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        "
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+
+      <table>
+        <tr>
+          <td colspan="2">
+            <button onclick="downloadPDF()" class="Wid">
+              Soil tests (PDF)
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h1 class="Titre">Your Farmer</h1>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="Sources/Far.png" alt="Farmer" />
+          </td>
+          <td>
+            <div id="Div5">
+              <b class="Green"> Name :</b> John Doe <br />
+              <b class="Green">Profile :</b> <br />
+              Knowledgeable Farm Worker with drive and experience helping to
+              carry out day-to-day tasks and long-term projects on farms.
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="myDiv7" class="Div">
+      <div style="display: flex">
+        <img
+          src="Sources/1.png"
+          alt="photo"
+          title="titre du projet"
+          width="20%"
+          height="90px"
+        />
+        <input
+          type="text"
+          placeholder="&#128269; Find a product"
+          style="
+            height: 40px;
+            border-radius: 20px;
+            width: 400px;
+            margin-top: 20px;
+          "
+        />
+        <i class="fas fa-bell" style="margin: 30px"></i>
+      </div>
+
+      <h1 class="Titre">History</h1>
+      <div class="F2">
+        <table>
+          <tr>
+            <td id="T1">
+              <h3>Tomato</h3>
+              <p>
+                Start date: 12/02/2022<br />
+                Harvest date: 20/07/2022<br />
+                Weight: 1kg
+              </p>
+            </td>
+            <td>
+              <img src="Sources/Tomato.png" alt="Tomato" class="Gha" />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="F2">
+        <table>
+          <tr>
+            <td id="T1">
+              <h3>Banana</h3>
+              <p>
+                Start date: 15/03/2023<br />
+                Harvest date: 03/04/2023<br />
+                Weight: 3kg
+              </p>
+            </td>
+            <td>
+              <img src="Sources/Pannana.png" alt="Pannana" class="Gha" />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="F2">
+        <table>
+          <tr>
+            <td id="T1">
+              <h3>Cabbage</h3>
+              <p>
+                Start date: 12/05/2023<br />
+                Harvest Date: 20/07/2023<br />
+                Weight: 0.5Kg
+              </p>
+            </td>
+            <td>
+              <img src="Sources/Cabbage.png" alt="Cabbage" class="Gha" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
