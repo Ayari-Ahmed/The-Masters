@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - How to Build a Pure CSS Animated Tab Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div id="myDiv1" class="Div">
+      <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1 class="Title"><b>Create Account</b></h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/login.php" class="social"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"
+                class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.linkedin.com/login" class="social"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="farm" placeholder="Enter Farm Name" />
+            <input type="farm" placeholder="Enter Farm Location" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1 class="Title"><b> Sign in</b></h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/login.php" class="social"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"
+                class="social"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.linkedin.com/login" class="social"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email / Farm Name" />
+            <input type="password" placeholder="Password" />
+
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" name="Remember me" id="Remember_me" />
+                </td>
+                <td>
+                  <span>Remember me</span>
+                </td>
+              </tr>
+            </table>
+
+            <a href="#" class="Green">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <!-- Left Panel -->
+            <div class="overlay-panel overlay-left">
+              <img src="../main/Sources/1.png" alt="Logo" class="Logo" />
+              <h1>Welcome Back Dear Farmer!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signInButton">Sign In</button>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="overlay-panel overlay-right">
+              <img src="../main/Sources/1.png" alt="Logo" class="Logo" />
+              <h1>Hello, Dear Farmer!</h1>
+              <p>Enter your personal details and start the journey with us</p>
+              <button class="ghost" id="signUpButton">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="BT_Log" onclick="redirectToIndex()">
+        <i class="fas fa-sign-in-alt sign-in-icon" ></i>
+      </button>
+    </div>
+    <!-- partial:index.partial.html -->
+    <nav class="nav">
+      <input id="menu" type="checkbox" />
+      <label for="menu">Login</label>
+      <ul class="menu">
+        <li>
+          <a href="#" onclick="toggleDiv('myDiv1')">
+            <span>As a Farmer</span>
+            <i class="fas fa-tasks" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../main/index.html" target="_self" >
+            <span>As a client</span>
+            <i class="fas fa-users" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <div id="WLC">
+        <strong>WELCOME</strong>
+      </div>
+    </nav>
+
+
+    
+
+    <div id="moulin">
+      <div class="base">
+      </div>
+      <div class="toit">
+      </div>
+      <div id="pales">
+        <div class="cercle">
+        </div>
+      <div class="pale1">
+      </div>
+      <div class="pale2">
+      </div>
+      <div class="pale3">
+      </div>
+      <div class="pale4">
+      </div>
+      </div>
+    </div>
+    <div class="windmill__clouds">
+      <div class="windmill__cloud"></div>
+      <div class="windmill__cloud"></div>
+      <div class="windmill__cloud"></div>
+      <div class="windmill__cloud"></div>
+      <div class="windmill__cloud"></div>
+      <div class="windmill__cloud"></div>
+    </div>
+
+    <div class="windmill__snowflakes">
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+      <div class="windmill__snowflake"></div>
+    </div>
+
+
+    <div id="LL">
+      <img src="../main/Sources/1.png" alt="Logo"  />
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

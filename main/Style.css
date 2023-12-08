@@ -17,7 +17,8 @@
 	color: #FFFFFF;
 
 	background-color:  #2F7B1F;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(189, 189, 189, 0.25), 
+	0 10px 10px rgba(124, 124, 124, 0.22);
 }
 .F2{
 	padding: 20px; 
@@ -27,7 +28,8 @@
 	color: #FFFFFF;
 
 	background-color:  #2F7B1F;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow:  0 14px 28px rgba(189, 189, 189, 0.25), 
+	0 10px 10px rgba(124, 124, 124, 0.22);
 }
 #Mapp{
 	border-radius: 40px;
@@ -47,7 +49,8 @@
 	color: black;
 	font-family: 'Varela Round', sans-serif;
 	
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow:  0 14px 28px rgba(189, 189, 189, 0.25), 
+	0 10px 10px rgba(124, 124, 124, 0.22);
 
 }
 
@@ -63,6 +66,9 @@ font-weight: 700;
 line-height: 50px; /* 156.25% */
 letter-spacing: -1px;
 }
+
+
+
 #myDiv2{
 	display: none;
 	padding: 15px;
@@ -70,7 +76,8 @@ letter-spacing: -1px;
 	position: relative;
 	background-color: #FFFFFF;
 	border-radius: 20px;	
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow:  0 14px 28px rgba(189, 189, 189, 0.25), 
+			0 10px 10px rgba(124, 124, 124, 0.22);
 }
 .Gha{
 	position: relative;
@@ -102,7 +109,8 @@ font-weight: 800;
 	top: -100px;
 	background-color: #FFFFFF;
 	border-radius: 20px;	
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(189, 189, 189, 0.25), 
+	0 10px 10px rgba(124, 124, 124, 0.22);
 }
 .Div {
 	display: none; /* Hide the div by default */
@@ -237,8 +245,8 @@ input {
 .container {
 	background-color: #fff;
 	border-radius: 30px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
+  	box-shadow: 0 14px 28px rgba(189, 189, 189, 0.25), 
+			0 10px 10px rgba(124, 124, 124, 0.22);
 	position: relative;
 	overflow: hidden;
 	width: 768px;
@@ -311,7 +319,7 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
+	background: #41ff71;
 	background: -webkit-linear-gradient(to right, #379025, #1a4411);
 	background: linear-gradient(to right,  #379025, #1a4411);
 	background-repeat: no-repeat;
@@ -379,10 +387,12 @@ input {
 
 
 
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body  {  
-  background: #032b0f68;
+  background: #101827;
   font-family: 'Roboto', sans-serif;
   text-transform:uppercase;
   text-shadow: .5px .5px 0 #CCCCCC;
@@ -399,7 +409,8 @@ body  {
   transition: .75s;
 }
 
-.nav{  
+
+.nav2{  
   padding: 0px;
   width: 640px;
   margin: 100px auto auto auto;
@@ -455,26 +466,26 @@ li a.title:hover{
   transform: translateY(-10px);
 }
 
-.nav li:first-child a {  
+.nav2 li:first-child a {  
   background:#379683 !important;
 }
 
-.nav li:nth-child(2) a {  
+.nav2 li:nth-child(2) a {  
   background:#5cdb95 !important;
 }
 
-.nav li:nth-child(3) a {  
+.nav2 li:nth-child(3) a {  
   background:#8ee4af !important;
 }
 
 
-.nav li:first-child:hover ~ .background {
+.nav2 li:first-child:hover ~ .background {
   background: #379683;
 }
-.nav li:nth-child(2):hover ~ .background {
+.nav2 li:nth-child(2):hover ~ .background {
   background: #5cdb95;
 }
-.nav li:nth-child(3):hover ~ .background {
+.nav2 li:nth-child(3):hover ~ .background {
   background: #8ee4af;
 }
 
@@ -492,5 +503,3 @@ li a.title:hover{
     opacity: 0;
   }
 }
-
-
